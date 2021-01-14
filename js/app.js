@@ -14,52 +14,36 @@ console.log('the user\'s name is: ' + userName);
 // question one
 var questionOne = prompt('Do I live in Seattle?').toLowerCase();
 if (questionOne === 'yes' || questionOne === 'y') {
-alert('you are correct');
-console.log('you are correct');
-} else if ( questionOne === 'no' || questionOne === 'n' ) {
-alert('you are WRONG, why would you think that?');
-console.log('user is incorrect');
+  alert('You are correct');
+} else if (questionOne === 'no' || questionOne === 'n') {
+  alert('You are WRONG, why would you think that?');
+}
 
 var questionTwo = prompt('Is Texas the largest state?').toLowerCase();
 if (questionTwo === 'yes' || questionTwo === 'y') {
-alert('no, it is not.');
-console.log('user is incorrect');
-} else if ( questionTwo === 'no' || questionTwo === 'n' ) {
-alert('you are CORRECT. The largest state is Alaska.');
-console.log('user is correct');
+  alert('No, it is not.');
+} else if (questionTwo === 'no' || questionTwo === 'n') {
+  alert('You are CORRECT. The largest state is Alaska.');
+}
 
 var questionThree = prompt('Is Houston the state capitol of Texas?').toLowerCase();
 if (questionThree === 'yes' || questionThree === 'y') {
-alert('no, it is not.');
-console.log('user is incorrect');
-} else if ( questionThree === 'no' || questionThree === 'n' ) {
-alert('you are CORRECT. The capitol of Texas is Austin.');
-console.log('user is correct');
+  alert('No, it is not.');
+} else if (questionThree === 'no' || questionThree === 'n') {
+  alert('You are CORRECT. The capitol of Texas is Austin.');
+}
 
 var questionFour = prompt('Is the mockingbird the state bird of Texas?').toLowerCase();
 if (questionFour === 'yes' || questionFour === 'y') {
-alert('That is CORRECT!');
-console.log('user is correct');
-} else if ( questionFour === 'no' || questionFour === 'n' ) {
-alert('you are WRONG. The mockingbird is the state bird of Texas.');
-console.log('user is wrong');
+  alert('That is CORRECT!');
+} else if (questionFour === 'no' || questionFour === 'n') {
+  alert('You are WRONG. The mockingbird is the state bird of Texas.');
+}
 
 var questionFive = prompt('Is the Texas state motto, Bigger in Texas?').toLowerCase();
 if (questionFive === 'yes' || questionFive === 'y') {
-alert('no, it is not. The state mottto is Friendship.');
-console.log('user is incorrect');
-} else if ( questionFive === 'no' || questionFive === 'n' ) {
-alert('you are CORRECT.');
-console.log('user is correct');
+  alert('No, it is not. The state mottto is Friendship.');
 
+} else if (questionFive === 'no' || questionFive === 'n') {
+  alert('You are CORRECT.');
 }
-
-// this is not required, but have fun!
-// if(questionOne === 'yes'  || questionOne === 'y') {
-//  // console.log('you are correct');
-// alert('you are correct');
-// } else if ( questionOne === 'no' || questionOne === 'n' ) {
-// alert('you are WRONG, why would you think that');
-// } else {
-// alert('you are WRONG!');
-// }
