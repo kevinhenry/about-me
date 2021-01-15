@@ -14,36 +14,51 @@ console.log('the user\'s name is: ' + userName);
 // question one
 var questionOne = prompt('Do I live in Seattle?').toLowerCase();
 if (questionOne === 'yes' || questionOne === 'y') {
+  // console.log('you are correct');
   alert('You are correct');
 } else if (questionOne === 'no' || questionOne === 'n') {
   alert('You are WRONG, why would you think that?');
 }
 
+// question two
 var questionTwo = prompt('Is Texas the largest state?').toLowerCase();
 if (questionTwo === 'yes' || questionTwo === 'y') {
+  // console.log('you are correct');
   alert('No, it is not.');
 } else if (questionTwo === 'no' || questionTwo === 'n') {
   alert('You are CORRECT. The largest state is Alaska.');
 }
 
+// question three
 var questionThree = prompt('Is Houston the state capitol of Texas?').toLowerCase();
 if (questionThree === 'yes' || questionThree === 'y') {
+  // console.log('you are correct');
   alert('No, it is not.');
 } else if (questionThree === 'no' || questionThree === 'n') {
   alert('You are CORRECT. The capitol of Texas is Austin.');
 }
 
+// question four
 var questionFour = prompt('Is the mockingbird the state bird of Texas?').toLowerCase();
 if (questionFour === 'yes' || questionFour === 'y') {
+  // console.log('you are correct');
   alert('That is CORRECT!');
 } else if (questionFour === 'no' || questionFour === 'n') {
   alert('You are WRONG. The mockingbird is the state bird of Texas.');
 }
 
+//question five
 var questionFive = prompt('Is the Texas state motto, Bigger in Texas?').toLowerCase();
 if (questionFive === 'yes' || questionFive === 'y') {
+  // console.log('you are correct');
   alert('No, it is not. The state mottto is Friendship.');
-
 } else if (questionFive === 'no' || questionFive === 'n') {
   alert('You are CORRECT.');
 }
+
+//  alto
+alert('Goodbye, ' + userName + '. Have a good one!');
+
+// template literal or string literal
+alert(`See Ya, ${userName} .I hope you enjoyed my website!`);
+alert(`It's closing time, ${userName}. One last call for alcohol!`);
