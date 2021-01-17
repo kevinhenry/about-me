@@ -56,6 +56,47 @@ if (questionFive === 'yes' || questionFive === 'y') {
   alert('You are CORRECT.');
 }
 
+//question six
+for (var i = 0; i < 4; i++) {
+  var guessmyAge = +prompt('How old do you think I am?');
+  // console.log(typeof(guessmyAge));
+  var age = 48;
+  if (guessmyAge === age) {
+    alert('Correct! Well done!');
+    break;
+  } else if (i < 3 && guessmyAge < age) {
+    alert('No, that is too low');
+  } else if (i < 3 && guessmyAge > age) {
+    alert('No, that is too high');
+  } else if (i === 3) {
+    alert('Sorry, you are out of tries');
+    break;
+  }
+}
+
+//question seven
+var favoriteMovie = ['Platoon', 'Stripes', 'Empire Strikes Back', 'Something'];
+var answerCorrect = false;
+var count = 4;
+for (i = 0; i < count; i++) {
+  var movie = prompt('Can you guess my favorite movie to watch?');
+  for (var j = 0; j < favoriteMovie.length; j++) {
+    if (movie === favoriteMovie[j]) {
+      alert(`You are correct! ${favoriteMovie[j]} is one of my favorite movies`);
+      answerCorrect = true;
+    }
+  }
+  if (answerCorrect) {
+    break;
+  } else if (answerCorrect === false) {
+    alert('No, that\'s a good one, but not one of mine');
+  }
+
+  if (i === count || answerCorrect) {
+    alert(`My favorite movies are ${favoriteMovie}`);
+  }
+}
+
 //  alto
 alert('Goodbye, ' + userName + '. Have a good one!');
 
