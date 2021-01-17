@@ -23,7 +23,7 @@ p {
 } 
 
 ol {
-  list-style: lower-roman;
+  list-style: upper-roman;
   margin: 60px;
   list-style: center;
   text-align: left;
