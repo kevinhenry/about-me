@@ -67,16 +67,17 @@ if (questionFive === 'yes' || questionFive === 'y') {
 
 //question six
 for (var i = 0; i < 4; i++) {
-  var guessmyAge = +prompt('How old do you think I am?');
-  // console.log(typeof(guessmyAge));
+  // var guessMyAge = parseInt(b)('How old do you think I am?');
+  var guessMyAge = +prompt('How old do you think I am?');
+  // console.log(typeof(guessMyAge));
   var age = 48;
-  if (guessmyAge === age) {
+  if (guessMyAge === age) {
     alert('Correct! Well done!');
     score++; // keeping score
     break;
-  } else if (i < 3 && guessmyAge < age) {
+  } else if (i < 3 && guessMyAge < age) {
     alert('No, that is too low');
-  } else if (i < 3 && guessmyAge > age) {
+  } else if (i < 3 && guessMyAge > age) {
     alert('No, that is too high');
   } else if (i === 3) {
     alert('Sorry, you are out of tries. I\'m 48 years old.');
@@ -84,12 +85,23 @@ for (var i = 0; i < 4; i++) {
   }
 }
 
+// while (numberOfGuess && !answerCorrect) {
+//  var guessMyFavorites = prompt(`What are my fave? You get ${nuberOfGuess} guesses!`).toLowerCase();
+//  for (var k = 0;  < myFavortieAnimals.length; k++) {
+//    if (guessMyFavorites === myFavoriateAnimals[k]) {
+//     alert('Correct');
+//     answerCorrect = true;
+//     score++;
+//     break;
+//    }
+//  }
+
 //question seven
 var favoriteMovie = ['Platoon', 'Stripes', 'Empire Strikes Back', 'Something'];
 var answerCorrect = false;
 var count = 6;
 for (i = 0; i < count; i++) {
-  var movie = prompt('Can you guess my favorite movie to watch?');
+  var movie = prompt('Can you guess my favorite movie to watch?').toLowerCase();
   for (var j = 0; j < favoriteMovie.length; j++) {
     if (movie === favoriteMovie[j]) {
       alert(`You are correct! ${favoriteMovie[j]} is one of my favorite movies`);

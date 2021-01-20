@@ -23,13 +23,14 @@ p {
 } 
 
 ol {
-  list-style: upper-roman;
+  border: 2px solid black;
+  border-radius: 5px;
+  list-style: decimal;
   margin: 60px;
   list-style: center;
   text-align: left;
   text-indent: 10px;
   text-shadow: grey 2px 2px 2px;
-  border-radius: 5px;
 }
 
 ul {
@@ -42,6 +43,17 @@ ul {
 footer {
   text-align: center;
   text-shadow: grey 2px 2px 2px;
+}
+
+img {
+  border: solid black;
+  border-radius: 8px;
+  padding: 5px;
+  width: 150px;
+}
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba (0, 140, 186, 0.5);
 }
 
 goals {
