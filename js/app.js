@@ -5,10 +5,10 @@
 
 // keep score
 var score = 0;
+var userName = prompt('What should I call you?');
 
 function entryName() {
   // get user name and offer greeting
-  var userName = prompt('What should I call you?');
   alert('Hello ' + userName + ', nice to meet you!');
   console.log('the user\'s name is: ' + userName);
 }
@@ -85,9 +85,9 @@ questionFive();
 function questionSix() {
   //question six
   for (var i = 0; i < 4; i++) {
-    // var guessMyAge = parseInt(b)('How old do you think I am?');
+    // var guessMyAge = parseInt('How old do you think I am?');
     var guessMyAge = +prompt('How old do you think I am?');
-    // console.log(typeof(guessMyAge));
+    // console.log(guessMyAge);
     var age = 48;
     if (guessMyAge === age) {
       alert('Correct! Well done!');
@@ -117,34 +117,39 @@ questionSix();
 //    }
 //  }
 
-//question seven
-// var favoriteMovie = ['Platoon', 'Stripes', 'Empire Strikes Back', 'Heathers'];
-// var answerCorrect = false;
-// var count = 6;
-// for (i = 0; i < count; i++) {
-//   var movie = prompt('Can you guess my favorite movie to watch?').toLowerCase();
-//   for (var j = 0; j < favoriteMovie.length; j++) {
-//     if (movie === favoriteMovie[j]) {
-//       alert(`You are correct! ${favoriteMovie[j]} is one of my favorite movies`);
-//       answerCorrect = true;
-//       score++; // keeping score
-//     }
-//   }
-//   if (answerCorrect) {
-//     break;
-//   } else if (answerCorrect === false) {
-//     alert('No, that\'s a good one, but not one of mine');
-//   }
-//   if (i === count || answerCorrect) {
-//     alert(`My favorite movies are ${favoriteMovie}`);
-//   }
-// }
+function questionSeven() {
+  //question seven
+  var favoriteMovie = ['platoon', 'stripes', 'empire strikes back', 'heathers'];
+  var answerCorrect = false;
+  var count = 6;
+  var i = 0;
+  for (i = 0; i < count; i++) {
+    var movie = prompt('Can you guess my favorite movie to watch?').toLowerCase();
+    for (var j = 0; j < favoriteMovie.length; j++) {
+      if (movie === favoriteMovie[j]) {
+        alert(`You are correct! ${favoriteMovie[j]} is one of my favorite movies`);
+        answerCorrect = true;
+        score++; // keeping score
+      }
+    }
+    if (answerCorrect) {
+      break;
+    } else if (answerCorrect === false) {
+      alert('No, that\'s a good one, but not one of mine');
+    }
+    if (i === count || answerCorrect) {
+      alert(`My favorite movies are ${favoriteMovie}`);
+    }
+  }
+}
+questionSeven();
 
-// alert('You got ' + score + ' questions correct. Good job!');
+// provide score
+alert('You got ' + score + ' questions correct. Good job!');
 
-// //  alto
-// alert('Goodbye, ' + userName + '. Have a good one!');
+// alto
+alert('Goodbye, ' + userName + '. Have a good one!');
 
-// // template literal or string literal
-// alert(`See Ya, ${userName}. I hope you enjoyed my website!`);
-// alert(`It's closing time, ${userName}. One last call for alcohol!`);
+// template literal or string literal
+alert(`See Ya, ${userName}. I hope you enjoyed my website!`);
+alert(`It's closing time, ${userName}. One last call for alcohol!`);
