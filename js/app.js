@@ -97,7 +97,7 @@ for (var i = 0; i < 4; i++) {
 //  }
 
 //question seven
-var favoriteMovie = ['Platoon', 'Stripes', 'Empire Strikes Back', 'Something'];
+var favoriteMovie = ['Platoon', 'Stripes', 'Empire Strikes Back', 'Heathers'];
 var answerCorrect = false;
 var count = 6;
 for (i = 0; i < count; i++) {
@@ -111,7 +111,8 @@ for (i = 0; i < count; i++) {
   }
   if (answerCorrect) {
     break;
-  } else if (answerCorrect === false) {
+  }
+  if (answerCorrect === false) {
     alert('No, that\'s a good one, but not one of mine');
   }
 
